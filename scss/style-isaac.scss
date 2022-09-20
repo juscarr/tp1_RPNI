@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/**
+ * @author Ève Février (quelques broutilles d'actualisation de l'exercice)
+ * @author Prénom Nom courriel   <---- Utiliser nom complet ou nom d'utilisateur Github
+ *
+ * TABLE DES MATIÈRES
+ * Normalize
+ * Utilitaires
+ * Charte typographique
+ * Grille
+ * Règles générales
+ * Entête du site
+ * Main
+ * Footer
+ */
+
+
+ /* Normalize
+   ========================================================================== */
+@import 'normalize';
+
+// /* Utilitaires
+//    ========================================================================== */
+// @import 'utilitaires';
+
+// /* Charte typographique
+//    ========================================================================== */
+// @import 'typo.css';
+
+
+/* Mise en page générale
+   ========================================================================== */
+
+
+/****  header  ****/
+ 
+.block {
+     width: 50px;
+ } 
