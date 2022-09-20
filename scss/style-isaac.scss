@@ -1,6 +1,6 @@
 @charset "UTF-8";
+
 /**
- * @author Yves Hélie (conception et réalisation pour @timcsf)
  * @author Ève Février (quelques broutilles d'actualisation de l'exercice)
  * @author Prénom Nom courriel   <---- Utiliser nom complet ou nom d'utilisateur Github
  *
@@ -14,19 +14,27 @@
  * Main
  * Footer
  */
-/* Normalize
-   ========================================================================== */
-@import url(normalize.css);
-/* Utilitaires
-   ========================================================================== */
-@import url(utilitaires.css);
-/* Charte typographique
-   ========================================================================== */
-@import url(typo.css);
-/* Pages CSS
-   ========================================================================== */
-@import url(style-isaac.css);
-@import url(style-jay.css);
-@import url(style-justin.css);
 
-/*# sourceMappingURL=style.css.map */
+
+ /* Normalize
+   ========================================================================== */
+@import 'normalize';
+
+// /* Utilitaires
+//    ========================================================================== */
+// @import 'utilitaires';
+
+// /* Charte typographique
+//    ========================================================================== */
+// @import 'typo.css';
+
+
+/* Mise en page générale
+   ========================================================================== */
+
+
+/****  header  ****/
+ 
+.block {
+     width: 50px;
+ } 
