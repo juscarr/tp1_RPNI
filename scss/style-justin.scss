@@ -8,13 +8,13 @@
  * Normalize
  * Utilitaires
  * Charte typographique
- * Grille
- * Règles générales
- * Entête du site
- * Main
+ * Justin Part
+ * Star codes
+ * Question
  * Footer
- */
+ ** Dropdown
 
+ */
 
 /* Normalize
   ========================================================================== */
@@ -26,15 +26,330 @@
 
 // /* Charte typographique
 //    ========================================================================== */
-@import 'typo.css';
+@import 'typo';
 
 
-/* Mise en page générale
-   ========================================================================== */
+/* JUSTIN */
+
+* {
+  font-weight: 500;
+}
+
+.h2-stars--code {
+  font-weight: 650;
+}
+
+.h2-question {
+  font-weight: 650;
+}
+
+h3 {
+  color: rgba(0, 0, 0, .58);
+  font-weight: 700;
+
+}
+
+$couleur--principal: #008248;
+/** Star codes **/
+
+.question-stars {
+  padding: {
+    left: 20px;
+    right: 10px;
+    top: 20px;
+    bottom: 20px;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  /** Écran Large **/
+  @media(min-width: 768px) {
+    margin: {
+      left: 100px;
+      right: 100px;
+    }
+  }
+}
+
+.text-stars {
+  width: 100%;
+}
+
+.h2-stars--code {
+  width: 100%;
+}
+
+.stars-input {
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  outline: {
+    color: $couleur--principal;
+    width: 2px;
+  }
+  border: {
+    style: solid;
+    color: grey;
+    width: 1.5px;
+  }
+  padding: {
+    left: 10px;
+  }
+}
+
+.stars-input::placeholder {
+  color: #333333;
+  font-weight: 600;
+
+  :first-letter {
+    color: $couleur--principal;
+  }
+}
+
+.stars-input:focus::placeholder {
+  color: $couleur--principal;
+}
 
 
-/****  header  ****/
+.stars-button {
+  margin: {
+    top: 20px;
+  }
+  width: 90px;
+  height: 35px;
+  border: {
+    radius: 20px;
+    width: 1px;
+  }
+  background: {
+    color: white;
+  }
+}
 
-.block {
+/** Questions **/
+
+.question-help {
+  padding: {
+    left: 20px;
+    right: 10px;
+    top: 20px;
+    bottom: 20px;
+  }
+  /*** Écran Large ***/
+  @media(min-width: 768px) {
+    margin: {
+      left: 100px;
+      right: 100px;
+    }
+  }
+}
+
+/*** Terms ***/
+
+.link {
+  color: $couleur--principal;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.terms-services {
+  background: #f9f9f9;
+  padding: {
+    top: 30px;
+    left: 20px;
+    right: 10px;
+    bottom: 30px;
+  }
+}
+
+/*** Écran Large ***/
+@media(min-width: 768px) {
+  .conteneur-terms {
+    display: flex;
+    align-content: space-between;
+  }
+  .terms {
+    margin {
+      left: 20px;
+      right: 20px;
+    }
+
+    &-first {
+      width: 50%;
+      padding-right: 10px;
+    }
+
+    &-second {
+      width: 50%;
+      padding-left: 10px;
+    }
+  }
+
+
+}
+
+/** Footer **/
+.footer {
+  padding: {
+    left: 20px;
+    bottom: 40px;
+    right: 10px;
+    top: 40px;
+  }
+}
+
+.footer-small {
+  border: {
+    top: 2px lightgray solid;
+    bottom: 2px lightgray solid;
+  }
+  margin: {
+    bottom: 50px;
+  }
+  padding: {
+    bottom: 50px;
+    top: 40px;
+  }
+  @media(min-width: 1025px) {
+    display: flex;
+  }
+}
+
+.ul-social {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: {
+    left: 10px;
+  }
+}
+
+.span-between {
+  display: none;
+  @media(min-width: 1024px) {
+    display: block;
+  }
+}
+
+.ul-links {
+  padding: {
+    left: 10px;
+  }
+  @media(min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.li-social {
   width: 50px;
+  height: auto;
+  padding-right: 5px;
+  transition: all .2s ease-in-out
+}
+
+.li-social:hover {
+  transform: scale(1.3);
+}
+
+
+.li-link {
+  list-style: none;
+  padding: {
+    bottom: 20px;
+    left: 10px;
+  }
+}
+
+.footer-link {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  color: grey;
+  padding: {
+    top: 20px;
+    left: 10px;
+  }
+}
+
+/*** Dropdown ***/
+
+.dropbtn {
+  background: {
+    color: white;
+  }
+  color: rgba(0, 0, 0, 0.87);
+  width: 100%;
+  font-size: 1.9rem;
+  border: none;
+  cursor: pointer;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media(min-width: 1025px) {
+    cursor: default;
+  }
+}
+
+.arrow {
+  width: 20px;
+  @media(min-width: 1025px) {
+    display: none;
+  }
+}
+
+.dropdown {
+  position: relative;
+  @media(min-width: 1025px) {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background: {
+    color: white;
+  }
+  width: 100%;
+  z-index: 1;
+  @media(min-width: 1025px) {
+    display: block;
+  }
+}
+
+.dropdown-content a {
+  color: rgba(0, 0, 0, .58);
+  padding: 12px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: black;
+}
+
+.show {
+  display: block;
+}
+
+.reverse {
+  transition: all 0.5s ease;
+  transform: rotate(180deg);
+}
+
+.normal {
+  transition: all 0.5s ease;
+  transform: rotate(0deg);
 }
