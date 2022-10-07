@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+/**
+ * @author Ève Février (quelques broutilles d'actualisation de l'exercice)
+ * @author Prénom Nom courriel   <---- Utiliser nom complet ou nom d'utilisateur Github
+ *
+ * TABLE DES MATIÈRES
+ * Normalize
+ * Utilitaires
+ * Charte typographique
+ * Grille
+ * Règles générales
+ * Entête du site
+ * Main
+ * Footer
+ */
+
+
+ /* Normalize
+   ========================================================================== */
+@import '_normalize.scss';
+
+// /* Utilitaires
+//    ========================================================================== */
+@import '_utilitaires.scss';
+
+// /* Charte typographique
+//    ========================================================================== */
+@import '_typo.scss';
+
+
+/* Mise en page générale
+   ========================================================================== */
+
+
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* extra */
+.extra{
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+}
+@media (min-width: 768px) {
+  .extra { 
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+  }
+}
+.h2-extra {
+    display: flex;
+    justify-content:center;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+  .top-extra { 
+    width: 66.66667%;
+    margin-left: 16.66667%;
+  }
+}
+
+.text-extra {
+    text-align: center;
+    padding-top: 1.6rem;
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
+
+
+.img-extra{
+    width: 128px;
+    float: left;
+}
+@media (min-width: 768px) {
+  .img-extra { 
+    width: 128px;
+    float: none;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .extra-conteneur { 
+flex-direction: row;
+display: flex;
+  }
+}
+.extra-conteneur--element{
+    margin-bottom: 90px;
+}
+@media (min-width: 768px) {
+  .extra-conteneur--element { 
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+    padding-top: 3.2rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .extra-elements { 
+flex-direction: column;
+display: flex;
+  }
+}
+
+.lien-extra{
+  color: #008248;
+}
+
+/* stars */
+
+.stars{
+    background-color:  #f3f1e7;
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+.h2-stars {
+    display: flex;
+    justify-content:center;
+    margin: 0;
+}
+
+
+.text-stars {
+    text-align: center;
+    padding-top: 1.6rem;
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
+.img-stars{
+  padding-right: 1.6rem;
+  width: 128px;
+  float: left;
+}
+
+
+
+@media (min-width: 768px) {
+  .stars-inner--conteneur_element-1{
+    padding-bottom: 6rem;
+    width: 25%;
+    float: left;
+  }
+}
+.stars-inner--conteneur_element-1{
+  padding-bottom: 8rem;
+}
+
+@media (min-width: 768px) {
+  .stars-inner--conteneur_element-2{
+    padding-bottom: 6rem;
+
+  }
+}
+.stars-inner--conteneur_element-2{
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 768px) {
+  .stars-inner--conteneur_element-top-1{
+    padding-bottom: 3.2rem;
+    float: left;
+    padding-right: 5rem;
+  }
+}
+.stars-inner--conteneur_element-top-1{
+  padding-bottom: 3.2rem;
+}
+
+@media (min-width: 768px) {
+  .stars-inner--conteneur_element-top-2{
+    padding-bottom: 3.2rem;
+    float: left;
+    padding-right: 5rem;
+  }
+}
+.stars-inner--conteneur_element-top-2{
+  padding-bottom: 3.2rem;
+  padding-top: 3.2rem;
+}
+
+@media (min-width: 768px) {
+  .elements-stars{
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .stars-inner--conteneur_element-3{
+    padding-bottom: 6rem;
+    width: 25%;
+    float: left;
+  }
+}
+.stars-inner--conteneur_element-3{
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 768px) {
+  .stars-inner--conteneur_element-4{
+    padding-bottom: 6rem;
+
+  }
+}
+.stars-inner--conteneur_element-4{
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 768px) {
+  .stars-inner{
+    padding-right: 6rem;
+    padding-left: 6rem;
+  }
+}
